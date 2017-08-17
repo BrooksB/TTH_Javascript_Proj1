@@ -1,7 +1,8 @@
-var quotesArray = [];
+var quotesArray = [];   //this is where all of our quotes from quotes.js will end up. Think of it like a bulletin board.
 
 
-window.onload = printQuote();
+window.onload = printQuote();   //this prints a quote at random
+
 
 // this is where we pull our random quotes
 function getRandomQuote(){
