@@ -3,10 +3,9 @@ var quotesArray = [];   //this is where all of our quotes from quotes.js will en
 
 window.onload = printQuote();   //this prints a quote at random
 
-
 // this is where we pull our random quotes
 function getRandomQuote(){
-  if (quotesArray.length === 0){
+  if (quotesArray.length === 0){          
     quotesArray = [].concat(quotes);
   }
 
@@ -18,14 +17,7 @@ function getRandomQuote(){
   console.log(quotesArray);
   return quote;
 }
-function getRandomColor() {
-  var letters = "0123456789A";
-  var colour = "#";
-  for (var i = 0; i < 6; i++) {
-    colour += letters[Math.floor(Math.random() * letters.length)];
-  }
-  return colour;
-}
+
 
 // when user clicks anywhere on the button, the "printQuote" function is called
 function printQuote(){
